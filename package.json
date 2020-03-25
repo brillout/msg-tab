@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "dev": "serve . --listen 3000",
+    "deploy": "yarn prod:build && yarn prod:deploy",
+    "prod:build": "rm -rf dist/ && mkdir -p dist/ && cp index.html dist/",
+    "prod:deploy": "push-dir --dir=dist/ --branch=gh-pages --cleanup"
+  },
+  "dependencies": {
+    "push-dir": "^0.4.1",
+    "serve": "^11.3.0"
+  }
+}

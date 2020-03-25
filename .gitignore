@@ -1,0 +1,9 @@
+# Installed modules
+/node_modules/
+
+dist/
+
+# Yarn/Npm debug info
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
